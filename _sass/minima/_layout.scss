@@ -1,0 +1,66 @@
+.nes-container.fit-content {
+	width: fit-content;
+	margin: 0 auto;
+	background-color: #000;
+}
+
+.nes-container.fixed-width {
+	@extend .fit-content;
+	width: 708px;
+}
+
+div#level {
+    margin-bottom: 40px;
+	width: 700px;
+}
+
+img[id="fire-l"] {
+	left: -21px;
+    position: relative;
+    bottom: 264px;
+}
+
+img[id="fire-r"] {
+    position: relative;
+    bottom: 264px;
+    right: -179px;
+}
+
+img[id="elder"] {
+	position: relative;
+    bottom: 264px;
+    right: -4px;
+}
+
+img[id="link"] {
+	position: relative;
+    right: 50px;
+    top: -144px;
+}
+
+img[id="cake"] {
+	right: 101px;
+    position: relative;
+    top: -206px;
+}
+
+#dialog-container-text {
+    margin-bottom: 2em;
+}
+
+#dialog-text {
+	word-wrap: break-word;
+	white-space: pre-line;
+}
+
+#musicIcon {
+	bottom: 188px;
+    right: 660px;
+    position: absolute;
+}
+
+#mapContainer {
+	margin-top: 2em;
+}
+
+

@@ -2,11 +2,20 @@
 layout: default
 ---
 
-<div class="home">
-	<h1 class="align-center head">{{ site.title }}</h1>
-	<div class="nes-balloon from-left">
-        <p>Hello NES.css</p>
-      </div>
+<div class="home align-center">
+	{% include music.html %}
+	
+	<h1 class=" head">{{ site.title }}</h1>
+	
+	<div id="level" class="nes-container is-dark with-title fit-content">
+		{% include level.html %}
+	</div>
+	
+	<div id="dialog-container" class="nes-container is-dark with-title fixed-width align-left">
+		{% include dialog.html %}
+	</div>
+	<img id="musicIcon" src=" {{ "./assets/img/MusicOn.png" | relative_url }}" class="musicOn" width="37" >
+	
 	{{ content }}
 
 </div>
