@@ -10,7 +10,6 @@
 }
 
 div#level {
-    margin-bottom: 40px;
 	width: 700px;
 }
 
@@ -54,13 +53,86 @@ img[id="cake"] {
 }
 
 #musicIcon {
-	bottom: 188px;
-    right: 660px;
-    position: absolute;
+	bottom: -34px;
+    right: -373px;
+    position: relative;
 }
 
 #mapContainer {
 	margin-top: 2em;
+}
+
+.headContainer {
+	width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width : 720px) {
+	div#level {
+		margin-bottom: 24px;
+		width: 376px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding: 1.5em 1em;
+	}
+	
+	img[id=fire-l] {
+		left: -21px;
+		position: relative;
+		bottom: 163px;
+		width: 7%;
+		height: 7%;
+	}
+		
+	img[id=fire-r] {
+		position: relative;
+		bottom: 163px;
+		right: -95px;
+		width: 7%;
+		height: 7%;
+	}
+
+	img[id=elder] {
+		position: relative;
+		bottom: 163px;
+		right: -2px;
+		width: 7%;
+		height: 7%;
+	}
+
+	img[id=link] {
+		position: relative;
+		right: 22px;
+		top: -81px;
+		width: 7%;
+		height: 7%;
+	}
+
+	img[id=cake] {
+		right: 48px;
+		position: relative;
+		top: -126px;
+		width: 7%;
+		height: 7%;
+	}
+	
+	#musicIcon {
+		bottom: 14px;
+		right: -169px;
+		position: relative;
+		width: 9%;
+	}
+	
+	#dialog-container {
+		width: 376px;
+	}
+	
+	div#mapContainer > iframe {
+		width: 314px;
+	}
 }
 
 
